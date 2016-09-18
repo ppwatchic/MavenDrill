@@ -10,6 +10,7 @@ In my pom.xml, there is maven coordinate
 ```
 Maven failed to install the file automatically. 
 
+## Solution
 After the many trials, the only one helps me is the following command line: 
 ```
 mvn install:install-file -Dfile=D:\JavaLibs\hamcrest-all-1.3.jar 
