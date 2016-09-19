@@ -72,7 +72,7 @@ Finaly, we can run the App.java in eclipse and get the following output in conso
 ## Follow-up for log4j
 1. Create a folder in this path: `src/main/resources`.
 2. Create a file named `log4j.properties` and edit it as following:
-```
+ ```
 # Root logger option
 log4j.rootLogger=error, stdout, file
 
@@ -89,7 +89,7 @@ log4j.appender.file.MaxFileSize=5MB
 log4j.appender.file.MaxBackupIndex=10
 log4j.appender.file.layout=org.apache.log4j.PatternLayout
 log4j.appender.file.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
-```  
+ ```  
 3. Spend time to drill in one line code in the above document: `log4j.rootLogger=error, stdout, file`. Two critical terms: level and appender. Pay attention to the path: `log4j.appender.file.File=E:\\log4j-application.log`. Change it to suit for you application.
 
 ## JUnit test case
