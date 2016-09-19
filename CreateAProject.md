@@ -1,5 +1,5 @@
 ## Create a maven project
-1. In the directory where the project is expected to reside, execute the following **maven goal**: 
+1. In the directory where the project is expected to reside, execute the following **maven goal**:
 ```
 mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app 
 -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
