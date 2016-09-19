@@ -48,7 +48,7 @@ At the same time change the JUnit test version to 4.11:
 2. Edit App.java to use log4j in main() method:
 First, edit the main() method.
  ```
- public static void main( String[] args ){
+public static void main( String[] args ){
         BasicConfigurator.configure();
 		    logger.info("info");
 		    logger.warn("warning");
@@ -58,12 +58,12 @@ First, edit the main() method.
 Second, declaree a static final logger: `static final Logger logger = Logger.getLogger(App.class);`
 Third, don't forget to import these two libraries: 
  ```
- import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
- ```
+ ```  
 Finaly, we can run the App.java in eclipse and get the following output in console: 
  ```
- 0 [main] INFO com.pingping.app.App  - info
+0 [main] INFO com.pingping.app.App  - info
 2 [main] WARN com.pingping.app.App  - warning
 2 [main] ERROR com.pingping.app.App  - error
  ```
