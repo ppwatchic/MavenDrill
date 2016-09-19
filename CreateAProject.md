@@ -24,8 +24,8 @@ terminology. And `package` is a maven phase. A list for common maven phases:
  
 ## Edit pom.xml
 1. Add dependency for log4j.jar as following: 
-```
- <dependencies>
+ ```
+<dependencies>
     <dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
@@ -33,12 +33,12 @@ terminology. And `package` is a maven phase. A list for common maven phases:
 			<scope>compile</scope>
 		</dependency>
 	</dependencies>
-```
+ ```  
 log4j library will be used to output information, instead of using System.out. [Here](https://logging.apache.org/log4j/2.x/) are more for log4j.
 
 At the same time change the JUnit test version to 4.11:
  ```
- <dependency>
+<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.11</version>
