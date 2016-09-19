@@ -69,6 +69,29 @@ Finaly, we can run the App.java in eclipse and get the following output in conso
 2 [main] ERROR com.pingping.app.App  - error
 ```
 
+## Follow-up for log4j
+1. Create a folder in this path: `src/main/resources`.
+2. Create a file named `log4j.properties` and edit it as following: 
+```
+# Root logger option
+log4j.rootLogger=error, stdout, file
+
+# Redirect log messages to console
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.Target=System.out
+log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
+
+# Redirect log messages to a log file, support file rolling.
+log4j.appender.file=org.apache.log4j.RollingFileAppender
+log4j.appender.file.File=E:\\log4j-application.log
+log4j.appender.file.MaxFileSize=5MB
+log4j.appender.file.MaxBackupIndex=10
+log4j.appender.file.layout=org.apache.log4j.PatternLayout
+log4j.appender.file.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
+```
+3. Spend time to drill in one line code in the above document: `log4j.rootLogger=error, stdout, file`. Two critical terms: level and appender. Pay attention to the path: `log4j.appender.file.File=E:\\log4j-application.log`. Change it to suit for you application.
+
 ## JUnit test case
 1. Implement a simple method in App.java: 
 ```
