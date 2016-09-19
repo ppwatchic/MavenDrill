@@ -92,13 +92,13 @@ log4j.appender.file.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:
 3. Spend time to drill in one line code in the above document: `log4j.rootLogger=error, stdout, file`. Two critical terms: level and appender. Pay attention to the path: `log4j.appender.file.File=E:\\log4j-application.log`. Change it to suit for you application.
 
 ## JUnit test case
-1. Implement a simple method in App.java: 
+1. Implement a simple method in App.java:
 ```
  public String concatenate(String str1, String str2) {
 		return str1 + str2;
 }
 ```
-2. Edit src/test/java/AppTest.java as following: 
+2. Edit src/test/java/AppTest.java as following:
 ```
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
