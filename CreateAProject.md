@@ -54,13 +54,13 @@ public static void main( String[] args ){
 		    logger.warn("warning");
 		    logger.error("error");
     }
- ```
-Second, declaree a static final logger: `static final Logger logger = Logger.getLogger(App.class);`
+ ```   
+Second, declaree a static final logger: `static final Logger logger = Logger.getLogger(App.class);`  
 Third, don't forget to import these two libraries: 
  ```
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
- ```  
+ ```    
 Finaly, we can run the App.java in eclipse and get the following output in console: 
  ```
 0 [main] INFO com.pingping.app.App  - info
