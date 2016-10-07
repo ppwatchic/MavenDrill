@@ -16,7 +16,7 @@
 						</archive>
 				</configuration>
 </plugin>
-```.
+```.  
 2.2 Eclipse version:  
 Version: 2.2.0.v20160606-1100  
 Build id: I20160606-1100  
