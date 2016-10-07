@@ -19,6 +19,9 @@ Problems when using `mvn package` to generate a war file.
 </build>
 ```  
 **2.1 Error: Unable to locate the Javac Compiler in: /usr/local/java/jre1.8.0_101/../lib/tools.jar**  
-**2.2 Solution:**
+**2.2 Solution:** go to Windows->Preferences->Java->Installed JREs->(clicked on the installed JREs)->Edit->FRE name = JAVA_HOME.  
+**3.1 Error: Tests in error:Unable to locate the Javac Compiler in: /usr/local/java.**  
+**3.2 Reason: didn't fulfill the test case in the implementation.**  
+**3.3 Solution: **
 
 
