@@ -6,16 +6,16 @@ Cons: Not recommended.
 3.2 Add Maven Plugin to fix this problem: adding dependency into war file.
 ```
 <plugin>
-			 	<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>3.0.0</version>
-				<configuration>
-					<archive>
-						<manifest>
-						<addClasspath>true</addClasspath>
-						</manifest>
-						</archive>
-				</configuration>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-war-plugin</artifactId>
+	<version>3.0.0</version>
+	<configuration>
+		<archive>
+			<manifest>
+			<addClasspath>true</addClasspath>
+			</manifest>
+		</archive>
+	</configuration>
 </plugin>
 ```
 
