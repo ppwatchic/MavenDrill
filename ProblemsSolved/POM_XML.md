@@ -2,7 +2,7 @@
 
 1. Error: **org.codehaus.plexus.archiver.jar.Manifest.write(java.io.PrintWriter)	pom.xml	/WebAppDemo	line 1**.
 2. Environment:   
-2.1 Maven Plugin: 
+2.1 Maven Plugin:
 ```
 <plugin>
 			 	<groupId>org.apache.maven.plugins</groupId>
