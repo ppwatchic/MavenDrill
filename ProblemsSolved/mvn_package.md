@@ -19,6 +19,6 @@ Problems when using `mvn package` to generate a war file.
 </build>
 ```  
 **2.1 Errors: Unable to locate the Javac Compiler in: /usr/local/java/jre1.8.0_101/../lib/tools.jar**  
-**2.2 Solution: **
+**2.2 Solution:**
 
 
