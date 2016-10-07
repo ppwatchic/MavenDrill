@@ -2,7 +2,7 @@
 2. Reason: When generating a web application, we need to take extra care with the **Referenced Libraries**.  
 3. Solution:  
 3.1 Install Eclipse for Java EE.  
-Cons: Not recommended. 
+Cons: Not recommended.   
 3.2 Add Maven Plugin to fix this problem: adding dependency into war file.
 ```
 <plugin>
