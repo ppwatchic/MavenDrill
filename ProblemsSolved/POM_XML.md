@@ -23,6 +23,6 @@ Build id: I20160606-1100
 2.3 m2e: 
 1.7.0.20160603-1933  
 3. Cause of error: the maven-war-plugin.  
-4.  
+4. Solution: 
 
 
