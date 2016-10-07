@@ -21,18 +21,18 @@ Problems when using `mvn package` to generate a war file.
 **3. Solution 2:** If the above doesn't work, the compiler has to be explicitly specified as below:
 ```
 <!-- Set a JDK compiler level -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>				
-				<configuration>
-					<verbose>true</verbose>
-					<fork>true</fork>
-					<executable>/usr/lib/jvm/java-8-openjdk-i386/bin/javac</executable>
-					<compilerVersion>1.8</compilerVersion>
-				</configuration>
-			</plugin>
-			```  
-			.
+<plugin>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-compiler-plugin</artifactId>				
+	<configuration>
+		<verbose>true</verbose>
+			<fork>true</fork>
+			<executable>/usr/lib/jvm/java-8-openjdk-i386/bin/javac</executable>
+			<compilerVersion>1.8</compilerVersion>
+	</configuration>
+</plugin>
+```  
+			
 
 
 
